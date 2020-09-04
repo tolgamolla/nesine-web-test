@@ -8,8 +8,7 @@ public class PageObject {
 
     public Browser browser;
 
-    protected PageObject(WebDriver driver)
-    {
+    protected PageObject(WebDriver driver) {
         browser = new Browser(driver);
 
         PageFactory.initElements(driver, this);

@@ -23,20 +23,17 @@ public class PopularBetsPage extends PageObject {
     private List<WebElement> popularBetsPlayedCount;
 
     // click methods
-    public void clickFootballTab() throws Exception
-    {
+    public void clickFootballTab() throws Exception {
         browser.click(footballTab);
     }
 
     // get text methods
 
-    public String getTextPopularBetsCode(int index)
-    {
+    public String getTextPopularBetsCode(int index) {
         return popularBetsCodes.get(index).getText();
     }
 
-    public String getTextPopularBetsPlayedCount(int index)
-    {
+    public String getTextPopularBetsPlayedCount(int index) {
         return popularBetsPlayedCount.get(index).getText();
     }
 }

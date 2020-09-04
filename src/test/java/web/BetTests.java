@@ -34,8 +34,7 @@ public class BetTests extends BaseClass {
     private static final int MY_BETS_SIZE = 5;
 
     @BeforeEach
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         homePage = new HomePage(browser);
         browser.get(UrlFactory.BASE_URL.pageUrl);
 
@@ -48,8 +47,7 @@ public class BetTests extends BaseClass {
     }
 
     @Test
-    public void testPopularFootballBets() throws Exception
-    {
+    public void testPopularFootballBets() throws Exception {
         // navigate popular bets and url control
         PopularBetsPage popularBetsPage = homePage.clickPopularBets();
         assertEquals(UrlFactory.POPULAR_BETS.pageUrl, browser.getCurrentUrl());
@@ -66,7 +64,7 @@ public class BetTests extends BaseClass {
             String betCode = popularBetsPage.getTextPopularBetsCode(index);
             String betCount = popularBetsPage.getTextPopularBetsPlayedCount(index);
 
-            JSONObject popularBetsObject = (JSONObject) popularBets.get(index -1);
+            JSONObject popularBetsObject = (JSONObject) popularBets.get(index - 1);
 
             String marketNo = getValueByKeyName(popularBetsObject, MARKET_NO);
             String playedCount = getValueByKeyName(popularBetsObject, PLAYED_COUNT);
@@ -99,13 +97,13 @@ public class BetTests extends BaseClass {
 
     // -- methods
 
-    private JSONArray getPopularFootballBetsResponse () throws IOException, ParseException {
+    private JSONArray getPopularFootballBetsResponse() throws IOException, ParseException {
 
         // Create a url object
-        URL url = new URL ("https://www.nesine.com/Iddaa/GetPopularBets");
+        URL url = new URL("https://www.nesine.com/Iddaa/GetPopularBets");
 
         // Open a connection
-        HttpURLConnection con = (HttpURLConnection)url.openConnection();
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
         // Set the request method
         con.setRequestMethod("POST");
@@ -121,13 +119,13 @@ public class BetTests extends BaseClass {
 
         // Create the Request Body
         String jsonInputString = "{'eventType': '1', 'date': 'null'}";
-        try(OutputStream os = con.getOutputStream()) {
+        try (OutputStream os = con.getOutputStream()) {
             byte[] input = jsonInputString.getBytes("utf-8");
             os.write(input, 0, input.length);
         }
 
         // Read the Response from Input Stream
-        try(BufferedReader br = new BufferedReader(
+        try (BufferedReader br = new BufferedReader(
                 new InputStreamReader(con.getInputStream(), "utf-8"))) {
             StringBuilder response = new StringBuilder();
             String responseLine = null;
@@ -144,8 +142,7 @@ public class BetTests extends BaseClass {
         }
     }
 
-    private String getValueByKeyName (JSONObject object, String key)
-    {
+    private String getValueByKeyName(JSONObject object, String key) {
         String popularBetValueByKey = object.get(key).toString();
 
         return popularBetValueByKey;

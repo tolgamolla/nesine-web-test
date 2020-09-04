@@ -9,8 +9,7 @@ import java.util.List;
 
 public class MyBetsPage extends PageObject {
 
-    public MyBetsPage(Browser browser)
-    {
+    public MyBetsPage(Browser browser) {
         super(browser.getDriver());
     }
 
@@ -19,8 +18,7 @@ public class MyBetsPage extends PageObject {
 
     // methods
 
-    public int getSizeMyBetsList()
-    {
+    public int getSizeMyBetsList() {
         return myBetsList.size();
     }
 }

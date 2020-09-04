@@ -2,8 +2,7 @@ package util;
 
 public interface WebSpecPaths {
 
-    interface HomePage
-    {
+    interface HomePage {
         String HEADER = "web/homepage/header.spec";
     }
 }

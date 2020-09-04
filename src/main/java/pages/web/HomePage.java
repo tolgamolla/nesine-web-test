@@ -8,8 +8,7 @@ import pages.web.myaccount.MyBetsPage;
 
 public class HomePage extends PageObject {
 
-    public HomePage(Browser browser)
-    {
+    public HomePage(Browser browser) {
         super(browser.getDriver());
     }
 
@@ -39,48 +38,40 @@ public class HomePage extends PageObject {
 
     // -- click methods
 
-    public PopularBetsPage clickPopularBets() throws Exception
-    {
+    public PopularBetsPage clickPopularBets() throws Exception {
         browser.click(popularBets);
         return new PopularBetsPage(browser);
     }
 
-    public void clickLoginBtn() throws Exception
-    {
+    public void clickLoginBtn() throws Exception {
         browser.click(loginBtn);
     }
 
-    public void clickLogOutBtn() throws Exception
-    {
+    public void clickLogOutBtn() throws Exception {
         browser.click(logOutBtn);
         browser.sleep(1);
     }
 
-    public MyBetsPage clickMyBets() throws Exception
-    {
+    public MyBetsPage clickMyBets() throws Exception {
         browser.click(myBets);
         return new MyBetsPage(browser);
     }
 
-    public HomePage moveToMyAccount()
-    {
+    public HomePage moveToMyAccount() {
         browser.moveToElement(myAccount);
         return this;
     }
 
-    public boolean isDisplayedRegisterBtn()
-    {
+    public boolean isDisplayedRegisterBtn() {
         return registerBtn.isDisplayed();
     }
 
-    public HomePage sendKeysTxtUsername(String username) throws Exception
-    {
+    public HomePage sendKeysTxtUsername(String username) throws Exception {
         browser.sendKeys(txtUsername, username);
         return this;
     }
 
-    public HomePage sendKeysTxtPassword(String password) throws Exception
-    {
+    public HomePage sendKeysTxtPassword(String password) throws Exception {
         browser.sendKeys(txtPassword, password);
         browser.sleep(1);
         return this;

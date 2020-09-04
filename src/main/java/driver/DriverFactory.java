@@ -23,8 +23,7 @@ public class DriverFactory {
     private static final Logger logger = LoggerFactory.getLogger(DriverFactory.class);
 
 
-    public WebDriver createInstance() throws MalformedURLException
-    {
+    public WebDriver createInstance() throws MalformedURLException {
         if (CHROME.equals(System.getProperty("browser"))) {
             System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/drivers/chromedriver");
             logger.info(System.getProperty("user.dir"));

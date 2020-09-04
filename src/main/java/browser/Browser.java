@@ -17,29 +17,22 @@ public class Browser {
         this.driver = driver;
     }
 
-    public WebDriver getDriver(){
+    public WebDriver getDriver() {
         return driver;
     }
 
-    public void get(String url)
-    {
+    public void get(String url) {
         driver.get(url);
     }
 
-    public String getCurrentUrl()
-    {
+    public String getCurrentUrl() {
         return driver.getCurrentUrl();
     }
 
-
-    public void sleep(int second)
-    {
-        try
-        {
+    public void sleep(int second) {
+        try {
             TimeUnit.SECONDS.sleep(second);
-        }
-        catch (InterruptedException ex)
-        {
+        } catch (InterruptedException ex) {
             // sleep not working
         }
     }
@@ -73,8 +66,7 @@ public class Browser {
         }
     }
 
-    public void moveToElement(WebElement element)
-    {
+    public void moveToElement(WebElement element) {
         Actions markerAction = new Actions(driver);
         markerAction.moveToElement(element);
         markerAction.build().perform();

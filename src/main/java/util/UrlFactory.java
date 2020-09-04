@@ -11,15 +11,14 @@ public enum UrlFactory {
 
     // -----
 
-    public final @NonNls String pageUrl;
+    public final @NonNls
+    String pageUrl;
 
-    UrlFactory(String pageUrl)
-    {
+    UrlFactory(String pageUrl) {
         this.pageUrl = pageUrl;
     }
 
-    UrlFactory(UrlFactory baseUrl, String pageUrl)
-    {
+    UrlFactory(UrlFactory baseUrl, String pageUrl) {
         this.pageUrl = baseUrl.pageUrl + pageUrl;
     }
 }
