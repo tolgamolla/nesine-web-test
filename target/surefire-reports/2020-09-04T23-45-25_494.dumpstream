@@ -1,0 +1,30 @@
+# Created at 2020-09-04T23:45:28.204
+[ForkJoinPool-1-worker-3] INFO driver.DriverFactory - /Users/tolga.molla/projects/nesine-automation
+
+# Created at 2020-09-04T23:45:28.204
+[ForkJoinPool-1-worker-1] INFO driver.DriverFactory - /Users/tolga.molla/projects/nesine-automation
+
+# Created at 2020-09-04T23:45:32.269
+[ForkJoinPool-1-worker-3] INFO base.BaseClass - --- TEST STARTED ---
+
+# Created at 2020-09-04T23:45:32.270
+[ForkJoinPool-1-worker-1] INFO base.BaseClass - --- TEST STARTED ---
+
+# Created at 2020-09-04T23:47:57.565
+[ForkJoinPool-1-worker-3] INFO base.BaseClass - Galen report file : /Users/tolga.molla/RunningLocalTest/1/GalenReports/1870632185/
+
+# Created at 2020-09-04T23:48:04.771
+[ForkJoinPool-1-worker-3] INFO base.BaseClass - --- TEST FINISHED ---
+
+# Created at 2020-09-04T23:48:04.951
+[ForkJoinPool-1-worker-3] INFO driver.DriverFactory - /Users/tolga.molla/projects/nesine-automation
+
+# Created at 2020-09-04T23:48:06.514
+[ForkJoinPool-1-worker-3] INFO base.BaseClass - --- TEST STARTED ---
+
+# Created at 2020-09-04T23:48:14.385
+[ForkJoinPool-1-worker-1] INFO base.BaseClass - --- TEST FINISHED ---
+
+# Created at 2020-09-04T23:49:39.626
+[ForkJoinPool-1-worker-3] INFO base.BaseClass - --- TEST FINISHED ---
+

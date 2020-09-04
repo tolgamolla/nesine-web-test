@@ -1,10 +1,10 @@
+browser/Browser.class
 util/UrlFactory.class
-driver/DriverManager.class
 util/WebSpecPaths$HomePage.class
 pages/web/HomePage.class
 util/WebSpecPaths.class
 driver/DriverFactory.class
 base/BaseClass.class
-actions/ElementActions.class
+pages/web/myaccount/MyBetsPage.class
 pages/PageObject.class
 pages/web/PopularBetsPage.class

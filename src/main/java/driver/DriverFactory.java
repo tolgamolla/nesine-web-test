@@ -31,7 +31,6 @@ public class DriverFactory {
 
         } else if (FIREFOX.equals(System.getProperty("browser"))) {
             System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/main/resources/drivers/geckodriver");
-            //System.setProperty("webdriver.firefox.bin", System.getProperty("user.dir") + "/src/main/resources/drivers/geckodriver");
 
             FirefoxOptions firefoxOptions = new FirefoxOptions();
             firefoxOptions.setHeadless(true);
@@ -42,8 +41,6 @@ public class DriverFactory {
             Capabilities chromeCapabilities = DesiredCapabilities.chrome();
             RemoteWebDriver dockerChrome = new RemoteWebDriver(new URL(DOCKER_URL), chromeCapabilities);
 
-            //Capabilities firefoxCapabilities = DesiredCapabilities.firefox();
-            //RemoteWebDriver dockerFirefox = new RemoteWebDriver(new URL(DOCKER_URL), firefoxCapabilities);
             return dockerChrome;
         }
 

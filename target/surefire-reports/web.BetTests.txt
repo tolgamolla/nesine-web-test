@@ -1,4 +1,27 @@
 -------------------------------------------------------------------------------
 Test set: web.BetTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.52 s - in web.BetTests
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 251.801 s <<< FAILURE! - in web.BetTests
+testPopularFootballBets  Time elapsed: 9.574 s  <<< ERROR!
+java.lang.Exception: 
+unknown error: Element <li class="popular-bets ">...</li> is not clickable at point (479, 94). Other element would receive the click: <div class="modal-body">...</div>
+  (Session info: chrome=85.0.4183.83)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.15.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'users-MacBook-Pro.local', ip: 'fd78:6a89:24d:fa00:d07c:5f12:7faf:25c7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/pb/6bzqc05n0xq...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58201}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 85.0.4183.83, webStorageEnabled: true}
+Session ID: 9e8871f6113b47828510af2874d31de5
+	at web.BetTests.testPopularFootballBets(BetTests.java:52)
+
+testOtherScenario  Time elapsed: 94.796 s  <<< ERROR!
+java.lang.Exception: 
+Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on MAC (4ea923e19e9062de1177bf447eda2a8e)] -> xpath: //a[@tracking-label = 'Header-Hesabım-Kuponlarim']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'users-MacBook-Pro.local', ip: 'fd78:6a89:24d:fa00:d07c:5f12:7faf:25c7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/pb/6bzqc05n0xq...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58388}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 85.0.4183.83, webStorageEnabled: true}
+Session ID: 4ea923e19e9062de1177bf447eda2a8e
+	at web.BetTests.testOtherScenario(BetTests.java:90)
+
