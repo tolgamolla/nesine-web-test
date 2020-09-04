@@ -1,0 +1,27 @@
+# Created at 2020-09-04T22:11:22.857
+[ForkJoinPool-1-worker-1] INFO driver.DriverFactory - /Users/tolga.molla/projects/nesine-selenium/nesine-web-test
+
+# Created at 2020-09-04T22:11:22.857
+[ForkJoinPool-1-worker-3] INFO driver.DriverFactory - /Users/tolga.molla/projects/nesine-selenium/nesine-web-test
+
+# Created at 2020-09-04T22:11:26.446
+[ForkJoinPool-1-worker-1] INFO base.BaseClass - --- TEST STARTED ---
+
+# Created at 2020-09-04T22:11:26.447
+[ForkJoinPool-1-worker-3] INFO base.BaseClass - --- TEST STARTED ---
+
+# Created at 2020-09-04T22:11:53.645
+[ForkJoinPool-1-worker-3] INFO base.BaseClass - --- TEST FINISHED ---
+
+# Created at 2020-09-04T22:11:53.820
+[ForkJoinPool-1-worker-3] INFO driver.DriverFactory - /Users/tolga.molla/projects/nesine-selenium/nesine-web-test
+
+# Created at 2020-09-04T22:11:55.267
+[ForkJoinPool-1-worker-1] INFO base.BaseClass - --- TEST FINISHED ---
+
+# Created at 2020-09-04T22:11:55.390
+[ForkJoinPool-1-worker-3] INFO base.BaseClass - --- TEST STARTED ---
+
+# Created at 2020-09-04T22:12:05.151
+[ForkJoinPool-1-worker-3] INFO base.BaseClass - --- TEST FINISHED ---
+
